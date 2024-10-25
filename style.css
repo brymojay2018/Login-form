@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rethink Sans", sans-serif;
+}
+
+/* nav-section-style-start-here */
+.nav-section{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 4rem;
+    position: fixed;
+    background-color: white;
+}
+
+.nav-bar-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #d7d7d7;
+    padding-bottom: 1rem;
+}
+
+.brand-logo{
+    width: fit-content;
+    height: auto;
+}
+
+.nav-list-container{
+    width: fit-content;
+    height: auto;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-item-list{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #1e1e1e;
+}
+
+.nav-button-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-button button{
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.sign-in-button button{
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: white;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/* form-section-style-start-here */
+
+.form-section{
+    width: 100%;
+    height: 100vh;
+    padding: 3rem;
+    background-color: white;
+}
+
+.form-section-container{
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 2rem;
+    border-color: #d7d7d7b5;
+    border-radius: 8px;
+}
+
+.form-top-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.form-header-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title h1{
+    font-size: 1.4rem;
+}
+
+.input-form-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: start;
+    align-items: start;
+}
+
+.input-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: start;
+}
+
+label{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+input{
+    width: 100%;
+    height: auto;
+    padding: 0.8rem;
+    border-radius: 0.35rem;
+    outline: none;
+    border: none;
+    border: 1px solid #d5d5d5;
+}
+
+.password-label-lin-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-label-lin-container a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4f46e5;
+}
+
+::placeholder{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.bottom-form-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.form-button{
+    width: 100%;
+}
+
+.form-button button{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 0.35rem; 
+    color: white;  
+}
+
+.member-trial-container{
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.member-trial-container a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4f46e5;
+}
+
+.member-trial-container p{
+    font-size: 0.9rem ;
+}
+
+
+@media (max-width: 992px) {
+  
+    .nav-section{
+        width: 100%;
+        height: auto;
+        padding: 2rem 2rem;
+        position: fixed;
+        background-color: white;
+    }
+    
+    .nav-bar-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid #d7d7d7;
+        padding-bottom: 1rem;
+    }
+    
+    .brand-logo{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .nav-list-container{
+        display: none;
+    }
+    
+    .nav-items{
+        display: none;
+    }
+    
+    .nav-item-list{
+       display: none;
+    }
+    
+    .nav-button-container{
+        display: none;
+        
+    }
+
+    .mobile-menu{
+        display: flex;
+    }
+    
+    /* form-section-responsiveness */
+
+
+.form-section{
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    background-color: white;
+}
+
+.form-section-container{
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 2rem;
+    border-color: #d7d7d7b5;
+    border-radius: 8px;
+}
+
+.form-top-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.form-header-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title h1{
+    font-size: 1.3rem;
+}
+
+.input-form-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: start;
+    align-items: start;
+}
+
+.input-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: start;
+}
+
+label{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+input{
+    width: 100%;
+    height: auto;
+    padding: 0.8rem;
+    border-radius: 0.35rem;
+    outline: none;
+    border: none;
+    border: 1px solid #d5d5d5;
+}
+
+.password-label-lin-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-label-lin-container a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #4f46e5;
+}
+
+::placeholder{
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.bottom-form-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.form-button{
+    width: 100%;
+}
+
+.form-button button{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 0.35rem; 
+    color: white;  
+}
+
+.member-trial-container{
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: start;
+    justify-content: start;
+    row-gap: 0.3rem;
+}
+
+.member-trial-container a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #4f46e5;
+}
+
+.member-trial-container p{
+    font-size: 0.8rem ;
+}
+  
+    
+}
+
+
